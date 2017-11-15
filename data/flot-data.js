@@ -8,8 +8,7 @@ $(document).ready(function() {
         var sin = [],
             cos = [];
         for (var i = 0; i < 12; i += 0.2) {
-            sin.push([i, Math.sin(i + offset)]);
-            cos.push([i, Math.cos(i + offset)]);
+            sin.push([i, Math.floor(Math.random()*5000)+20000]);
         }
 
         var options = {
@@ -25,12 +24,12 @@ $(document).ready(function() {
                 hoverable: true //IMPORTANT! this is needed for tooltip to work
             },
             yaxis: {
-                min: -1.2,
-                max: 1.2
+                min: 20000,
+                max: 25000
             },
             tooltip: true,
             tooltipOpts: {
-                content: "'%s' of %x.1 is %y.4",
+                content: "%y",
                 shifts: {
                     x: -60,
                     y: 25
@@ -40,10 +39,7 @@ $(document).ready(function() {
 
         var plotObj = $.plot($("#flot-line-chart"), [{
                 data: sin,
-                label: "sin(x)"
-            }, {
-                data: cos,
-                label: "cos(x)"
+                label: "Portefeuille"
             }],
             options);
     }
