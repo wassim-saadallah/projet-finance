@@ -36,8 +36,87 @@
 
     <div id="wrapper">
 
-        <!-- Navigation -->
-        <script src="https://www.w3schools.com/lib/w3.js"></script>
+       <!-- Navigation -->
+       <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Virstex</a>
+            </div>
+            <!-- /.navbar-header -->
+            <ul class="nav navbar-top-links navbar-left" id="side-menu">
+                    <li>
+                        <a href="index.html">
+                             Acceuil</a>
+                    </li>
+                    <li>
+                        <a href="marche.html">
+                           </i> Marché
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portefeuille.html">
+                            Portefeuille</a>
+                    </li>
+                </ul>
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-check fa-fw"></i> L'ordre 'Achat Valeur 1' a été éxécuté avec succès
+                                    <span class="pull-right text-muted small">il y a 4 minutes</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-remove fa-fw"></i> Erreur dans l'ordre 'Vente Valeur 7'
+                                    <span class="pull-right text-muted small">Il y a 12 minutes</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>
+                        <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-user fa-fw"></i>Profil</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-gear fa-fw"></i> Paramètres</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out fa-fw"></i> Déconnection</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+        </nav>
 
         <!-- Page Content -->
         <div id="page-wrapper">
@@ -618,71 +697,71 @@
     <!-- /#wrapper -->
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="myOrdreModal" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Passage d'un ordre</h4>
-                </div>
-                <div class="modal-body">
-                    <form role="form">
-                        <div class="form-group">
-                            <label>Valeur</label>
-                            <select class="form-control">
-                                <option>Valeur 1</option>
-                                <option selected="selected">Valeur 2</option>
-                                <option>Valeur 3</option>
-                                <option>Valeur 4</option>
-                                <option>Valeur 5</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Quantité</label>
-                            <input type="number" class="form-control">
-                            <p class="red">la limite est 500 actions</p>
-                        </div>
-                        <div class="form-group">
-                            <label>Type</label>
-                            <label class="radio-inline">
-                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked>Achat
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">Vente
-                            </label>
-                        </div>
-                        <button type="submit" class="btn btn-default" data-toggle="modal" data-target="#myConfirmationModal">Valider</button>
-                        <button type="reset" class="btn btn-default">Réinitialiser</button>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
-                </div>
+<!-- Modal -->
+<div class="modal fade" id="myOrdreModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Passage d'un ordre</h4>
             </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label>Valeur</label>
+                        <select class="form-control">
+                            <option>Valeur 1</option>
+                            <option selected="selected">Valeur 2</option>
+                            <option>Valeur 3</option>
+                            <option>Valeur 4</option>
+                            <option>Valeur 5</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Quantité</label>
+                        <input type="number" class="form-control">
+                        <p class="red">la limite est 500 actions</p>
+                    </div>
+                    <div class="form-group">
+                        <label>Type</label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked>Achat
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">Vente
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-default" data-toggle="modal" data-target="#myConfirmationModal">Valider</button>
+                    <button type="reset" class="btn btn-default">Réinitialiser</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+            </div>
+        </div>
 
-            <!-- jQuery -->
-            <script src="../vendor/jquery/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
 
-            <!-- Bootstrap Core JavaScript -->
-            <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
 
-            <!-- Metis Menu Plugin JavaScript -->
-            <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
 
-            <!-- Flot Charts JavaScript -->
-            <script src="../vendor/flot/excanvas.min.js"></script>
-            <script src="../vendor/flot/jquery.flot.js"></script>
-            <script src="../vendor/flot/jquery.flot.pie.js"></script>
-            <script src="../vendor/flot/jquery.flot.resize.js"></script>
-            <script src="../vendor/flot/jquery.flot.time.js"></script>
-            <script src="../vendor/flot-tooltip/jquery.flot.tooltip.min.js"></script>
-            <script src="../data/flot-data.js"></script>
+    <!-- Flot Charts JavaScript -->
+    <script src="../vendor/flot/excanvas.min.js"></script>
+    <script src="../vendor/flot/jquery.flot.js"></script>
+    <script src="../vendor/flot/jquery.flot.pie.js"></script>
+    <script src="../vendor/flot/jquery.flot.resize.js"></script>
+    <script src="../vendor/flot/jquery.flot.time.js"></script>
+    <script src="../vendor/flot-tooltip/jquery.flot.tooltip.min.js"></script>
+    <script src="../data/flot-data.js"></script>
 
 
-            <!-- Custom Theme JavaScript -->
-            <script src="../dist/js/sb-admin-2.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
 
 </body>
 
